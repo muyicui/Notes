@@ -80,8 +80,11 @@ git show commit_id
 git diff id1 id2
 
 ==============================================================
-=roll back
+=roll back commit
 ==============================================================
-#
+#quick update after commit
+git commit --amend
+git revert commit_id
+
 
 
