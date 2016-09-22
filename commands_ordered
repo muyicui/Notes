@@ -1,0 +1,543 @@
+apropos			//search whatis database for partial word matches
+
+bg   			//running hung process in the background
+
+chgrp			//change the home directory of the group
+
+chgrp [options] group-owner files
+chgrp			//change the group owner
+
+chmod [options] [octal_mode/symbolic_mode,[symbolic_mode]/--reference=rfile] files			
+chmod			//modify the access mode
+chmod -c		//report only on changess
+chmod -R		//recursive mode
+chmod -v		//verbose, report on all files
+chmod octal_mode	//change the access mode by octal numbers
+chmod symbolic_mode	//group u,g,o,a; operation +,-,=; permition r,w,x,X,s,t; X changes permission on dictory and files who already has excute permission
+
+chown [options] user-owner.group-owner files
+chown			//change the ownership of a file
+chown -c		//display only the changes
+chown -R		//recursive mode
+chown -v		//verbose mode
+
+cp -d 			//copy the symbolic link instead of copy the ordinary file
+
+cp [options] file file/directory
+cp			//copy files
+cp -f			//force an overwrite
+cp -i			//prompt interactively before overwriting destination
+cp -p			//preserve all infomations
+cp -r -R		//recursively copy
+cp -v 			//verbose
+
+cut options [files]
+cut			//selected columns or fields from files
+cut -b			//print byte of position
+cut -c			//print char of position
+cut -f 			//print field
+cut -d 			//set delimiter
+
+date  			//date
+date +%m-%d-%y		//date
+date +%H-%M-%S		//time	
+
+depmod	-a		//rebuild the modules dependancy
+
+df [options] [file[file...]]
+df 			//display all disk information in /etc/fstab 
+df -h 			//display the numbers with K, M and G for easy reading
+df -i			//display the numbers of inode instead of disk space
+df .			//display the current directory disk utilization
+
+dhcpd [options] [interface..]
+dhcpd			//launch dhcp server deamon
+
+dig hostname
+dig			//obtain information form DNS server
+
+dmesg 			//display last boot information 
+
+du [options] [directories]
+du			//disk utilization by directories
+du -s			//display the total utilization of a directory include the sub directories(but won't showes any sub information)
+du -S			//list the utilization of the directory exclude the size of sub directories
+du -Ss			//only display the file size in the directory(without sub directories sizes)
+du -c			//display a total number of the disk utilization
+du -h			//display the numbers with M or G for easy reading
+
+e2fsck [options] [-t type] [fs-options] filesystem
+e2fsck			//check ext2 and ext3 filesystem
+e2fsck -p		//check Linux ext2 and ext3 filesystem and repair errors automatically, without any prompting
+e2fsck -b		//followed by block numbers to restore the bad superblock, typically use 8193
+e2fsck -c		//check for bad blocks
+e2fsck -f		//force a check, even the filesystem is clean(clean won't be check if don't use this option)
+e2fsck -y 		//answer "yes" to all interactive prompts, make e2fsck non-interactively
+
+edquota [-p proto-user] [options] names
+edquota 		//modify user or group quotas
+edquota -g		//modify group quota, -u will be ignore
+edquota -u		//modify user quota, by default
+edquota -p		//followed by another proto-user to copy his quota setting
+edquota -t		//modify soft limits
+
+emacs [options] [files]
+emacs			//emacs editor
+emacs -fg		//foreground color
+emacs -bg		//background color
+emacs -bd		//border color
+emacs -cr		//curser color
+emacs -ms		//mouse color
+emacs -fn		//fond
+emacs -q		//open as default config
+emacs -u user		//open with user's config file
+emacs -f function	//running LISP function
+emacs --visit=file	//open file to buffer
+emacs --file=file	//open file to buffer
+emacs +row:[column]	//open with the curser on a certain position
+emacs --debug-init	//use LISP debugger for .emacs
+emacs --eval		//run LISP expression
+emacs --batch		//batch mode
+
+expand [options] [files]
+expand			//convert tabs to spaces
+expand -t		//follow number specify tab stops,default 8
+expand -i		//convert only at the start of lies
+
+expr 			//evaluate expression
+expr length $string	//length of the string
+expr match  		//
+expr substr		//extract "length" characters from "string" starting at "position"
+
+fg			//run the hung process in foreground
+
+find paths expression
+find			//locate a file in the filesystem
+find -name		//name include
+find -lname		//find link name
+find -inum		//find inode number
+
+find			//find files
+find -name		//
+find -exec  {}\;	//find can execute commands
+
+fmt [options] [files]
+fmt			//format text to a specified width
+fmt -u			//uniform spacing, one space between words and two between sentences
+fmt -w			//set the line width,default is 75
+
+fsck [options] [-t type] [fs-options] filesystems
+fsck			//check filesystems and optionally correct them
+fsck -A			//check all filesystems list in /etc/fstab, better to use when boot before mount the filesystems
+fsck -N			//doesn't execute, only showes the jobs will be done
+fsck -t			//specify the type of the filesystem, default is ext2
+fsck -v			//with verbose output
+
+ftp [options] hostname
+ftp			//establish a ftp connection
+ftp -i			//turn off interactive prompting
+ftp -v			//set verbose mode
+ftp>ascii,binary	//
+ftp>get file		//get file from ftp server
+ftp>mget files		//get mutiple files from server
+ftp>ls			//obtain a directory list from server
+ftp>put file		//upload file to server
+ftp>mput files		//upload multiple files
+ftp>prompt		//turn off and on interactive prompting during mget and mput
+ftp>pwd			//corrent directory
+ftp>quit,exit,!		//exit
+
+gpasswd group		//change group password
+
+groupadd		//add a group
+
+groupadd group
+groupadd		//add a group
+
+groupdel group		//delete the group
+
+groupmod [options] group
+groupmod		//modify the parameters
+groupmod -n		//change the group name
+
+head [options] [files]
+head			//print the first few lines, if print multi files, a header is printed
+head -c 		//print the first n bytes, k or m used for kilo and mega
+head -n			//print the first n lines default 10
+
+host [options] hostname [server]
+host			//look up system with IP or name on the DNS server
+host -l			//list the entire domain
+host -v 		//verbose mode
+
+hostname [localname]	//display or set the hostname
+domainname[nisname]	//display or set the nis domain name
+dnsdomainname		//display current DNS domain name
+
+ifconfig interface parameters
+ifconfig		//configure network interface
+
+init N			//change runlevel
+
+insmod [options] module
+insmod			//insert a module into the running kernel
+insmod -s		//direct output to syslog instead of stdout
+insmod -v		//Verbose mode
+
+jobs [options]
+jobs			//list the active jobs
+jobs -l			//also list PID
+
+join [options] file1 file2
+join			//print a line of each pair of input files, that have identical join field
+join -j			//follow by number, use nth field join
+join -t 		//follow by separate char, use it as field separator
+
+kill [sigs] [pids]
+kill			//send signal to process, default is TERM(15)
+kill -s 		//use signal name 
+kill -l			//use signal number
+
+ldd [options[ file
+ldd			//print the share library dependencies
+
+ln [options] file link
+ln [options] files directory
+ln			//create links between files
+ln -s			//create symbolic link
+ln -f			//overwrite existing link
+ln -i			//prompt interactively 
+
+locate patterns
+locate			//locate files by searching a index of files, not for recently created file
+
+lsmod			//list all loaded modules, same as information in /proc/modules
+
+man [options][sections]name
+man			//display manual 
+man -a			//display all manual match the name in sequence
+man -d 			//display the dubugging information
+man -w 			//display the location only
+
+mkdir [options] directoroies
+mkdir			//create dir
+mkdir -m		//set access mode
+mkdir -p		//create intervening parent dirs
+
+modinfo [options] module_object_file
+modinfo			//display module information
+modinfo -a		//display the author
+modinfo -d		//display the module's discription
+modinfo -p		//display the parameters that module supported
+
+modprobe [options] module [symbol=value..]
+modprobe		//add modules, add prerequested modules by reading the module.deb
+modprobe -a		//Load all modules, load a certain group of modules with parameter -t
+modprobe -c		//display a complete module configuration
+modprobe -l		//List all modules, use -t to show a certain group of modules
+modprobe -r 		//remove loaded modules
+modprobe -t		//set the group of modules to use 
+modprobe -v		//verbose mode
+
+more			//enter for 1 line forward, spacebar for one page forward
+less			//PgUp PgDn arrors....besides more control 
+
+mount [options] device/directory
+mount			//display filesystems currently mounted on the system
+mount -a		//mount all partitions specified in /etc/fstab, except those with noauto option
+mount -o		//follow mount_options. async,auto,default(rw,suid,dev,exec,auto,nouser,async), dev,exec,noauto,noexec,nosuid,nouser,ro,rw,suid,sgid,sync,usr,users
+mount -r		//mount as read only partition
+mount -w		//mount as write read mode
+mount -t		//Specify the filesystem will be mounted as fstype, usually use for those has no entry in /etc/fstab
+mount -v		//set vorbose mode
+
+mv [options] source target
+mv			//move or rename a file
+mv -f			//force
+mv -i			//interactively
+
+netstat [options]
+netstat			//display network connection.routing table,interface etc.
+netstat -c		//display information continuously
+netstat -i		//display list of interface
+netstat -n		//display numbers on address port etc.
+netstat -p		//program mode
+netstat -r		//routing mode
+netstat -v		//verbose mode
+
+nice [-adjustment][command]
+nice			//set the nice value of a process
+
+nl [options] [files]
+nl			//number the lines in file, styles: A(number all lines),t(number non-empty lines), n(do not number), p(follow regexp, only number this).\:\:\:followed by header, \:followed by body, \:\: followed by footer
+nl -b			//set body numbering sytle default is t
+nl -f			//set footer numbering style, default is n
+nl -h			//set header numbering style, default is n
+
+od [options] [files]
+od			//dump ifles in octal or other formats
+od -t 			//specify the output type: a(named char),c(ASKII char and backslash escape),o(Octal,default),x(Hexadecimal). o and x can follow number to indicate how many bytes to interpreting
+
+passwd [options] username
+passwd			//change the user passwd
+passwd -l		//available only to superuser, means lock
+
+paste [options] [files]
+paste			//paste together corresponding lines into vertical columns
+paste -d		//separate columns with char in place of tab
+paste -s 		//merge lines from one file into a single lines,one line one file
+
+ping hostname
+ping			//send ICMP echo request to a host
+ping -c count		//sned and receive count packet
+ping -q 		//quiet, display only summary
+
+ping [options] destination
+ping			//send ICMP request
+
+pr [options] [files]
+pr			//convert a text file into a paginated columnar version, for prining
+pr -d			//double space
+pr -h			//use header in place of filename
+pr -l			//set page length, default 66
+pr -o			//set left margin to width
+
+ps [options]
+ps			//one-time snapshot of current processes on standard output
+ps -a 			//show processes for other users and other terminals
+ps -f			//display the parent PID
+ps -l			//long format
+ps -u 			//user format 
+ps -w			//wide output format
+ps -x			//include processes without controlling terminals
+ps -C			//display the command name instance
+ps -U			//display the processes owned by user
+
+pstree [options] [pid|user]
+pstree			//display the process tree
+pstree -a 		//display command-line argument used to launch process
+pstree -c		//disable the compaction of subtree
+pstree -G		//use VT100 line-drawing
+pstree -h		//high light the current process
+pstree -n 		//sort by PID
+pstree -p 		//view the PID
+
+pwconv			//convert standard password to a passwd and a shadow combination, enable shadow password
+pwunconv		//revert from shadow to standard password
+grpconv			//same as users
+grpunconv		//same as users
+
+quota [-u/-g] [options] user/group
+quota 			//Display quota limits on user and group
+quota -q 		//quite mode, shows only over-quota situation
+quota -v		//verbose mode
+
+quotacheck [options] filesystems		
+quotacheck		//exam the filesystems and compile quota database
+quotacheck -a		//check all in /etc/fstab
+quotacheck -g		//compile only groups
+quotacheck -u		//compile on users, by default
+quotacheck -v		//verbose mode
+
+quotaoff [options] [filesystems]
+quotaoff		//disable quota
+quotaoff -a		//turns quotas off for all filesystems in /etc/fstab, at boot time
+quotaoff -g		//turns off group quotas
+quotaoff -u		//turns off user quotas, by default
+quotaoff -v		//verbose mode to dsplay message for each filesystem where quotas are turned off
+
+quotaon [options] [filesystems]
+quotaon			//enable quota as previously configured
+quotaon -a		//turns quotas on for all filesystems in /etc/fstab, at boot time
+quotaon -g		//turns on group quotas
+quotaon -u		//turns on user quotas, by default
+quotaon -v		//verbose mode to dsplay message for each filesystem where quotas are turned on
+
+renice [+|-] nicenumber [options] target
+renice 	     		//change the nice value
+renice -u		//interpret targets as username
+renice -p		//interprete target as PID(default)
+
+repquota [options] filesystems
+repquota		//report quota status 
+repquota -a		//report on all quota filesystem
+repquota -g		//report on groups
+repquota -u		//report on users, by default
+repquota -v		//verbose mode
+
+rm [options] files
+rm			//delete, have permission on dir but not on file
+rm -d			//remove the dir even it is not empty
+rm -f 			//force
+rm -i			//interactively
+rm -r/-R		//recursively
+
+rmdir [option] dir
+rmdir			//delete dir
+rmdir -p		//remove the parent
+
+rmmod [options] module
+rmmod			//remove module from running kernel
+rmmod -a		//remove all unused modules
+rmmod -s		//output to syslog instead of stdout
+
+route [options]		//display and edit routing table
+route add [options] target
+route del [options] target
+route -h		//help
+route -n		//numeric mode, don't resolve host 
+route -v		//verbose mode
+route -C		//display the kernel routing cache
+route -F		//display the kernel routing table
+route -host		//specify the target is a single host
+route -net		//specify the target is a network
+route gw gateway	//IP packet for target route throught the gateway
+route netmask mask	//specify the mask of the route add
+route Destination	//destination
+route Gateway		//gateway address, * for default
+route Genmask		//
+route Route status flag	//!=reject;D=Dynamic;G=use gateway;H=target is a host;M=modified from routing daemon or redirect;R=reinstate route for dynamic routing;U=route is up
+route Metric	   	//??
+route Ref		//
+route Use		//
+route Iface		//
+
+shutdown [options] time [warning]
+shutdown 	   	//shutdown the system
+shutdown -f		//fast reboot, ingore filesystem check
+shutdown -h		//halt after shutdown
+shutdown -k		//don't shutdown,but send warning message
+shutdown -r 		//reboot
+shutdown -F		//force filesystem check on next boot
+
+sort [options] [files]
+sort			//sort the input
+sort -f			//case-insensitive 
+sort -k			//POS1[,POS2] sort on key starting at POS1 and ending at POS2
+sort -n			//sort numberically
+sort -r			//sort in reverse order
+sort -t			//set separator
+
+split [options] [infile] [outfile]
+split 			//split infile into multi outfiles, outfile sequenced by aa ab...
+split -n		//set infile into n-line segment default 1000
+
+strings [options] file
+strings 		//list strings in binary files
+
+tac [file]
+tac			//print the text file in reverse order
+
+tail [options] [files]
+tail			//print the last few lines of file
+tail -c			//print the last n bytes use k and m
+tail -n 		//print the last n lines default is 10
+tail -f			//continuously display a file as it is actively
+
+tee [options] files
+tee			//read from stdin and write both to one or more files and stdout
+tee -a			//append to not overwrite
+
+telinit N		//change runlevel
+
+telnet [host] [port]
+telnet			//establish a telnet connection, port default to 23
+
+top [options]
+top			//display the process info dynamicly
+top -b			//batch mode 
+top -d 			//refresh delay
+top -i			//ignore idle processes
+top -n			//display how many iterations and exit
+top -q			//refresh with no delay
+top -s			//secure mode, disable some control command
+
+touch [options] file
+touch			//change the access and/or modification times of file
+touch -a		//change only the access time
+touch -m 		//change only the modification time
+touch -t		//change to a certain time
+
+tr [options] [string1] [string2]
+tr 	     	        //translate char from string1 to string2
+tr -s			//squeeze out repeated output chars
+tr -c			//use the complement of string1
+tr -d			//delete char 
+
+traceroute hostname
+traceroute		//attempt to display the route to the desitination
+
+traceroute [option] destination
+traceroute		//view the path to the desitnation
+
+tune2fs [options] device
+tune2fs -l		//List all tunable parameters on the device(only for ext2 and ext3)
+tune2fs -c		//followed by a number n, set Max mount times. if the filesystem is mounted over the Max time. OS will run e2fsck automatically, 0  disable the function
+tune2fs -i 		//followed by a number and d(day), w(week), m(month), to show the time between 2 filesystem check(e2fsck -p), 0 disable
+tune2fs -L		//set a volume label of the filesystem
+tune2fs -j		//add an ext3 journal file to filesystem and sets the has_jourmal feature flag
+tune2fs -m		//followed by a number to set reserved blocks percentage for the root, df can't see these blocks,default 5%
+tune2fs -r		//followed by a number to set reserved blocks for root(real number, not percentage)
+
+umask 			//check the default protection bit, follow by integer to change the umask
+
+umount [options] device/directory
+umount			//unmount filesystem on device or mounted on directory
+umount -a		//unmount all filesystems in /etc/mtab, used at shutdown time
+umount -t		//unmount filesystems of type fstype
+
+uname 			//display system information
+uname -a		//display all informations
+uname -r		//display the kernel version
+
+unexpand [options] [files]
+unexpand		//convert spaces to tabs
+unexpand -a		//convert all spaces,default only on beginning space
+unexpand -t		//change the tab length
+
+uniq [options] [input[output]]
+uniq			//elimiating adjacent duplicate lines, usually works with sort
+uniq -d			//print only non-unique lines
+uniq -u			//print only unique lines
+
+updatedb [options]
+updatedb		//refresh or create the slocate database
+updatedb -e		//exclude the dirctories seperate by comma
+
+useradd			//add a user
+
+useradd [options] user
+useradd			//add users
+useradd -c 		//define comment field
+useradd -d 		//define the homedir
+useradd -m		//create and populate the home directory
+useradd -s		//define default shell
+useradd -D		//list system default values, can be changed
+
+userdel [-r] user
+userdel -r		//delete the user and the home directory
+
+usermod	-G		//followed by group user,assign existing user to a group
+
+usermod [options] user
+usermod			//change exist user profile
+usermod -L		//lock the user
+usermod -U		//unlock the user
+
+wc [options] file
+wc			//print the number of the new byte char or line in the file
+wc -l			//print line
+wc -w 			//print word
+wc -c			//print chars
+
+whatis 			//search whatis database for exact matches to keyword find
+
+which 			//use the PATH to locate the command directory
+
+whois target[@server]
+whois			//get information of the target
+
+xargs [options] [command] [init-arg]
+xargs 			//execute command followed by its optional init-args and append addtional argument found on stin
+xargs -n		//limit the number of additional argument
+

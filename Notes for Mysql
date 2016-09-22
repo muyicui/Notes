@@ -1,0 +1,27 @@
+--start or stop mysql service
+sudo start mysql
+sudo stop mysql
+/etc/init.d/mysql restart
+
+
+
+--Database localtion
+/var/lib/mysql
+
+--connect to mysql
+mysql -u root -p
+
+--show database
+show databases;
+
+--connect to databas
+connect [database]
+
+--delete a database
+drop database [database]
+
+--use default database
+use [database]
+
+--create database
+create database [database]
