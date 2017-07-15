@@ -1,0 +1,90 @@
+==============================================================
+=create this file for git notes
+==============================================================
+
+==============================================================
+=account setup
+==============================================================
+#install git
+sudo apt-get install git-all
+
+#config git
+git config --global user.name "My Name"
+git config --global user.email "myemail@example.com"
+
+#ssh
+
+==============================================================
+=local 
+==============================================================
+#create new repository
+git init
+
+#check status
+git status
+
+#stage 
+git add filename
+git add -A          #all doc
+
+#commit  
+git commit -m "commit
+
+#cancel the modifucatin
+git checkout -- filename    #back to the last add or commit
+
+#cancel the lastest commit
+git reset --hard commit_id
+
+==============================================================
+=remote
+==============================================================
+#add remote repository 
+git remote add origin git@github.com:username/project.git
+
+#uploading to server 
+git push origin master
+
+#clone a repository 
+git clone git@github.com:username/project.git
+
+#getting changes from remote repository
+git pull origin master
+
+==============================================================
+=branch
+==============================================================
+#create a branch other than "master"
+git branch branch_name
+
+#switch branch 
+git checkout branch_name
+git checkoout -b branch_name    #create and checkout branch
+
+#merge branch
+git merge branch_name
+
+#delete branch
+git branch -d branche_name
+
+==============================================================
+=log and compare
+==============================================================
+#check git logs
+git log
+
+#check a commit
+git show commit_id
+
+#check the different between commits
+git diff id1 id2
+
+==============================================================
+=roll back commit
+==============================================================
+#quick update after commit
+git commit --amend
+git revert commit_id
+
+
+

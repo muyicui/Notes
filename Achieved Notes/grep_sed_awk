@@ -1,0 +1,63 @@
+grep [options] regex [files]
+optons
+	-c only display the count of matched lines
+	-h display matched lines, but won't display the filenamees when multiple file input
+	-i ignore uppercase and lowercase
+	-n display the line number before the matched lines
+	-v print all lines do not match the regular  expression
+	-E interpret regex as extended regular expression
+
+--------------------------------------------------------------------------------
+
+sed [options] 'command' [files]
+sed [options] -e 'command1' [-e 'command2'...][files]
+sed [options] -f sedscript [files]
+
+options
+	-e specifies the follow argument is a command
+	-f the follow argument is a sed script
+	-g treat all subsititutions as global
+	-n quite mode
+
+sed opterates on text through the use of 
+	1. addresses
+	2. editting commands
+
+addressing 
+	1. A line number, sed counts lines continuously across multiple input files. '$' use to indicate the last line of the input. A range of lines numbers can be given by separating starting and ending lines with comma, for example, all inputs would be 1,$. (start, end)
+	2. Regular expression delimited by forward slashes, (/regex/)
+	3. Line number with an interval. form is n~s, 'n' is the starting line number and 's' is the stepping, it is a GNU extension to sed.(n~s)
+	4. when no addressing, the command will applies on all lines
+	5. If there are two address, command will apply on first matching the first address and all succeed lines up to and including the a line matching the second address (sed -e '/BEGIN/,/END/p' file)
+
+editing commands
+	p: print
+	d: delete lines
+	i: insert line before
+	a: insert line aftr
+	c: modify current line to
+	s: make subsititutions. syntax is s/pattern/replacement/[flags], the flags include:
+		g, replace all instances
+		n, replace nth instance in one line, default is 1
+		p, print the line if a successful subsitution is done. usually used with n.
+		w file, print the line to the file if successful substitution is done
+		y, translate characters
+		=, print the line number
+		!, doesn't contain./
+
+--------------------------------------------------------------------------------
+
+awk [options] 'instructions' files
+awk [options] -f script files
+
+options
+	-f follow a awk script
+	-F change the field seperator by the follow charactor (ex:F=":")
+	-v specify parameter
+
+instructions
+	instruction always included in ''
+	instruction need curly brace to brace the commands
+	instruction use / to identify the search field
+
+

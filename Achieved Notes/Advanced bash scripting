@@ -1,0 +1,20 @@
+.
+"dot" character match. When matching characters, as part of a regular expression, a "dot" matches a single character.
+"
+partial quoting [double quote]. "STRING" preserves (from interpretation) most of the special characters within STRING. 
+'
+full quoting [single quote]. 'STRING' preserves all special characters within STRING. This is a stronger form of quoting than "STRING". 
+,
+comma operator. The comma operator links.
+\
+escape [backslash]. A quoting mechanism for single characters.\X escapes the character X. This has the effect of "quoting" X, equivalent to 'X'. The \ may be used to quote " and ', so they are expressed literally.
+/
+Filename path separator [forward slash]. Separates the components of a filename (as in /home/bozo/projects/Makefile).This is also the division arithmetic operator.
+`
+command substitution. The `command` construct makes available the output of command for assignment to a variable. This is also known as backquotes or backticks.
+:
+null command [colon]. This is the shell equivalent of a "NOP" (no op, a do-nothing operation). It may be considered a synonym for the shell builtin true. The ":" command is itself a Bash builtin, and its exit status is true (0).also serves as a field separator.
+!
+reverse (or negate) the sense of a test or exit status [bang]. The ! operator inverts the exit status of the command to which it is applied (see Example 6-2). It also inverts the meaning of a test operator. This can, for example, change the sense of equal ( = ) to not-equal ( != ). The ! operator is a Bash keyword. In a different context, the ! also appears in indirect variable references. In yet another context, from the command line, the ! invokes the Bash history mechanism . Note that within a script, the history mechanism is disabled.
+*
+wild card [asterisk]. The * character serves as a "wild card" for filename expansion in globbing. By itself, it matches every filename in a given directory.
