@@ -1,0 +1,57 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node COLOR="#000000" CREATED="1500119223773" ID="ID_774061617" MODIFIED="1500120240109" TEXT="&#x6570;&#x636e;&#x5206;&#x6790;&#x65b9;&#x6cd5;&#x8bba;">
+<edge COLOR="#000000" WIDTH="8"/>
+<node COLOR="#0033ff" CREATED="1500119284003" ID="ID_1514106832" LINK="PEST&#x5206;&#x6790;&#x6cd5;.mm" MODIFIED="1500120176442" POSITION="right" TEXT="PEST&#x5206;&#x6790;&#x6cd5;">
+<edge COLOR="#0033ff" WIDTH="4"/>
+<node COLOR="#00b439" CREATED="1500120062061" ID="ID_303532012" MODIFIED="1500120176442" TEXT="&#x884c;&#x4e1a;&#x5206;&#x6790;&#xff0c;&#x5206;&#x6790;&#x5b8f;&#x89c2;&#x73af;&#x5883;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1500120209854" ID="ID_850338965" MODIFIED="1500120237168" POSITION="right" TEXT="4P&#x5206;&#x6790;&#x6cd5;">
+<edge COLOR="#0033ff" WIDTH="4"/>
+</node>
+<node COLOR="#0033ff" CREATED="1500120127815" ID="ID_525374099" MODIFIED="1500120176442" POSITION="right" TEXT="5W2H&#x5206;&#x6790;&#x6cd5;">
+<edge COLOR="#0033ff" WIDTH="4"/>
+<node COLOR="#00b439" CREATED="1500120273958" ID="ID_890005992" MODIFIED="1500121417725" TEXT="&#x7528;&#x9014;&#x5e7f;&#x6cdb;&#xff0c;&#x5206;&#x6790;&#x7528;&#x6237;&#x884c;&#x4e3a;&#x3001;&#x4e1a;&#x52a1;&#x95ee;&#x9898;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+<node COLOR="#00b439" CREATED="1500120410263" ID="ID_1166644114" MODIFIED="1500121417725" TEXT="&#x786e;&#x4fdd;&#x95ee;&#x9898;&#x8003;&#x8651;&#x5468;&#x5168;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+<node COLOR="#00b439" CREATED="1500120340375" ID="ID_776650783" MODIFIED="1500121417725" TEXT="why, what, who, where, when, how, how much">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1500120142562" ID="ID_595709255" MODIFIED="1500120389684" POSITION="right" TEXT="&#x903b;&#x8f91;&#x6811;&#x5206;&#x6790;&#x6cd5;">
+<edge COLOR="#0033ff" WIDTH="4"/>
+<node COLOR="#00b439" CREATED="1500120393640" ID="ID_1779173627" MODIFIED="1500121417725" TEXT="&#x7528;&#x4e8e;&#x4e1a;&#x52a1;&#x95ee;&#x9898;&#x5206;&#x6790;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+<node COLOR="#00b439" CREATED="1500120524087" ID="ID_1574166857" MODIFIED="1500121417725" TEXT="&#x904d;&#x5386;&#x95ee;&#x9898;&#x6240;&#x6709;&#x5206;&#x652f;&#xff0c;&#x9010;&#x5c42;&#x89e3;&#x5256;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+<node COLOR="#00b439" CREATED="1500120549375" ID="ID_1359261221" MODIFIED="1500121417725" TEXT="&#x8981;&#x7d20;&#x4e00;&#xff1a;&#x628a;&#x76f8;&#x540c;&#x95ee;&#x9898;&#x603b;&#x7ed3;&#x5f52;&#x7eb3;&#x6210;&#x8981;&#x7d20;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+<node COLOR="#00b439" CREATED="1500121044535" ID="ID_1264497121" MODIFIED="1500121417725" TEXT="&#x8981;&#x7d20;&#x4e8c;&#xff1a;&#x5427;&#x8981;&#x7d20;&#x7ec4;&#x6210;&#x6846;&#x67b6;&#xff0c;&#x4e0d;&#x91cd;&#x4e0d;&#x6f0f;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+<node COLOR="#00b439" CREATED="1500121049773" ID="ID_234246906" MODIFIED="1500121417725" TEXT="&#x8981;&#x7d20;&#x4e09;&#xff1a;&#x6846;&#x67b6;&#x5185;&#x8981;&#x7d20;&#x4fdd;&#x6301;&#x76f8;&#x4e92;&#x5173;&#x7cfb;&#xff0c;&#x4e0d;&#x5b64;&#x7acb;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1500121182067" ID="ID_689305057" LINK="4P&#x5206;&#x6790;&#x6cd5;.mm" MODIFIED="1500121606150" POSITION="right" TEXT="4P&#x5206;&#x6790;&#x6cd5;">
+<edge COLOR="#0033ff" WIDTH="4"/>
+<node COLOR="#00b439" CREATED="1500121188802" ID="ID_399616676" MODIFIED="1500121644634" TEXT="&#x516c;&#x53f8;&#x6574;&#x4f53;&#x7ecf;&#x8425;&#x5206;&#x6790;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+</node>
+<node COLOR="#0033ff" CREATED="1500121677478" ID="ID_402183734" LINK="&#x7528;&#x6237;&#x884c;&#x4e3a;&#x7406;&#x8bba;.mm" MODIFIED="1500122117777" POSITION="right" TEXT="&#x7528;&#x6237;&#x884c;&#x4e3a;&#x7406;&#x8bba;">
+<edge COLOR="#0033ff" WIDTH="4"/>
+<node COLOR="#00b439" CREATED="1500121685530" ID="ID_134298916" MODIFIED="1500121745643" TEXT="&#x5206;&#x6790;&#x7528;&#x6237;&#x884c;&#x4e3a;">
+<edge COLOR="#00b439" WIDTH="2"/>
+</node>
+</node>
+</node>
+</map>
