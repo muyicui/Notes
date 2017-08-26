@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Python for Stats</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+<p><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">Python for Stats</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">numpy</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">r = numpy.arange(start, end, diff) &#21019;&#24314;array</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">+ - * /</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">numper.power(r,2) &#24179;&#26041;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">r&gt;1 - &#29983;&#25104;&#30495;&#20540;array</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">r[r&gt;1] - &#20351;&#29992;&#30495;&#20540;array&#36807;&#28388;&#21407;array</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#30697;&#38453;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">numpy.dot(r,r.T)</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">pandas</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">pandas.Series</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#23450;&#20041;&#65306;&#21333;&#21015;&#25968;&#25454;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#29983;&#25104;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x = Series([data_list]), &#40664;&#35748;index</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x = Series([data_list],index=[index_list]) &#25351;&#23450;index</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#26597;&#30475;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x[index], 0~len(x)</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#25903;&#25345;&#20999;&#29255;</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#25554;&#20837;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x.append[new_Series]</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">Series&#26080;&#27861;&#25554;&#20837;&#20540;&#65292;&#38656;&#35201;append&#24207;&#21015;</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#26597;&#25214;&#21028;&#26029;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">value in x.values</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#21024;&#38500;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x.drop(index), &#26681;&#25454;index</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x.drop(x.index[loc])&#65292;&#26681;&#25454;&#20301;&#32622;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">x[condition] &#26681;&#25454;&#20540;&#21024;&#38500;</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">pandas.DataFrame</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#23450;&#20041;&#65306;&#22810;&#34892;&#22810;&#21015;&#25968;&#25454;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#29983;&#25104;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df =DataFrame({dict})</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">key&#20026;&#21015;&#21517;&#65292;value&#20026;[list]</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df = DataFrame({dict},index=[index_list])</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#26597;&#30475;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df[key], df[[keys]] &#21015;&#26597;&#30475;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df[&#20999;&#29255;] &#34892;&#26597;&#30475;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.loc[index],df.loc[[indexs]]&#34892;&#32034;&#24341;&#26597;&#30475;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.iloc[&#20999;&#29255;],&#34892;&#21015;&#21495;&#35775;&#38382;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.at[&#34892;&#65292;&#21015;]&#31934;&#20934;&#23450;&#20301;</span>
+
+</li>
+
+</ul>
+</li>
+<li>&#20462;&#25913;&#21517;&#31216;
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.columns = &#20462;&#25913;&#21015;&#21517;&nbsp;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.index = &#20462;&#25913;index</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#25554;&#20837;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.loc[len(df)] =[&#34892;&#65292;&#21015;] &#28155;&#21152;&#34892;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df[&#21015;&#21517;] = [data] &#28155;&#21152;&#21015;</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#21024;&#38500;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.drop(index,axis)</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">axis = 0 &#34892;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">axis = 1 &#21015;</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">&#26597;&#25214;</span>
+<ul><li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.apply(min) - &#21508;&#21015;&#26368;&#23567;&#20540;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.apply(min,axis = 1) - &#21508;&#34892;&#26368;&#23567;&#20540;</span>
+
+</li>
+<li><span style="font-size: 133%;font-family: SansSerif, sans-serif; ">df.apply(lambda x: numpy.all(x&gt;0), axis =1) - &#21028;&#26029;&#25152;&#26377;&#21015;&#26159;&#21542;&#22823;&#20110;&#38646;</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul></body>
+</html>
